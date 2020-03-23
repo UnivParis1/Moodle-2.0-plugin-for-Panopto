@@ -196,6 +196,11 @@ try {
                         $content->text .= "<div class='sectionHeader'><b>" . get_string('links', 'block_panopto') .
                             '</b></div>' .
                             "<div class='listItem'>" .
+                            "<a href='https://" . $panoptodata->servername . "/Panopto/Pages/Auth/Login.aspx?instance=" . $panoptodata->instancename . "&ReturnUrl=" . urlencode("/Panopto/Pages/Recorder/LaunchRecorder.aspx?folderID=" . $courseinfo->Id) . "'>" .
+                                    "Enregistrer une nouvelle session" .
+                                '</a>' .
+                            "</div>" .
+                            "<div class='listItem'>" .
                             "<a href='https://" . $panoptodata->servername . "/Panopto/Pages/Sessions/List.aspx?folderID=" . $courseinfo->Id . "' onclick='return panopto_startSSO(this)'>" .
                                     "Dossier Panopto de cet espace" .
                                 '</a>' .
