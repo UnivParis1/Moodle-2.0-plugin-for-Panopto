@@ -196,8 +196,8 @@ try {
                         $content->text .= "<div class='sectionHeader'><b>" . get_string('links', 'block_panopto') .
                             '</b></div>' .
                             "<div class='listItem'>" .
-                                "<a href='$courseinfo->SettingsUrl' onclick='return panopto_startSSO(this)'>" .
-                                    get_string('course_settings', 'block_panopto') .
+                            "<a href='https://" . $panoptodata->servername . "/Panopto/Pages/Sessions/List.aspx?folderID=" . $courseinfo->Id . "' onclick='return panopto_startSSO(this)'>" .
+                                    "Dossier Panopto de cet espace" .
                                 '</a>' .
                             "</div>\n";
                     }
