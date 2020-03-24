@@ -208,7 +208,7 @@ try {
                         $systeminfo = $panoptodata->get_recorder_download_urls();
                         $content->text .= "<div class='listItem'>" .
                             get_string('download_recorder', 'block_panopto') .
-                            "<span class='nowrap'>(" .
+                            "<span class='nowrap'> (" .
                             "<a href='$systeminfo->WindowsRecorderDownloadUrl'>Windows</a>" .
                             " | <a href='$systeminfo->MacRecorderDownloadUrl'>Mac</a>)</span>" .
                             "</div>\n";
